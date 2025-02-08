@@ -1,0 +1,90 @@
+/* Общие стили страницы */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eef2f5;
+    color: #333;
+}
+
+/* Основной контейнер приложения */
+.app {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Заголовок страницы */
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Контейнер для карточек (листингов) */
+.listings {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Стили карточки листинга */
+.listing {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 250px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.listing:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Заголовок карточки */
+.listing h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #2c3e50;
+}
+
+/* Общий текст в карточке */
+.listing p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+/* Стили для элемента продавца:
+   Обеспечивает, чтобы длинный адрес не выходил за границы,
+   текст не переносился и обрезался с многоточием */
+.seller {
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Кнопки */
+button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
